@@ -4,7 +4,7 @@ title: "Self-Ownership, Freedom, and Equality"
 author: "Exim Gealbhonn" 
 categories: journal 
 tags: [Cohen, Marxismo, Libertarianism, Filosofia Politica]
-image: Self-Ownership.jpg 
+image: cards.jpg 
 ---
 
 Titolo: Self-Ownership, Freedom, and Equality  
