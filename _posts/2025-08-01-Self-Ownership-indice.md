@@ -1,6 +1,6 @@
 ---
 layout: post 
-title: "'Self-Ownership, Freedom, and Equality'-Indice." 
+title: "Self-Ownership, Freedom, and Equality" 
 author: "Exim Gealbhonn" 
 categories: journal 
 tags: [Cohen, Marxismo, Libertarianism, Filosofia Politica]
