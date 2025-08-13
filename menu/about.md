@@ -7,4 +7,3 @@ Scrivo di libri che leggo, principalmente teoria politica. Probabilmente pubblic
 Nel caso di commenti di opinione all'interno degli articoli, si tenga presente che la mia affiliazione ideologica è all'anarchismo.
 
 Per l'indice dei contenuti, si faccia riferimento a questo [link](https://leggisuimuri.github.io/Indice).  
-Per errori e osservazioni, potete scrivermi su telegram al nick @EximGealbhonn oppure su [Mastodon](https://mastodon.bida.im/@exim_gealbhonn)
