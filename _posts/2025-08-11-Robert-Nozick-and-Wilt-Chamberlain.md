@@ -1,6 +1,6 @@
 ---
 layout: post 
-title:"1. Robert Nozick and Wilt Chamberlain" 
+title: "1. Robert Nozick and Wilt Chamberlain" 
 author: "Exim Gealbhonn" 
 categories: journal 
 tags: [Cohen, Marxismo, Libertarianism, Filosofia Politica]
