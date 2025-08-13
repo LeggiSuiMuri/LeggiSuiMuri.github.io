@@ -16,5 +16,5 @@ Sinossi:
 Showing that self-ownership fails to deliver the freedom it promises to secure, this analysis undermines the idea that lovers of freedom should embrace capitalism. It reaffirms the moral superiority of socialism, against the background of the disastrous Soviet experiment.
 
 Capitoli:  
-0.[Introduzione](https://leggisuimuri.github.io/Introduzione)
+0.[Introduzione](https://leggisuimuri.github.io/Introduzione)  
 1.[Robert Nozick and Wilt Chamberlain: how patterns preserve liberty](https://leggisuimuri.github.io/Robert-Nozick-and-Wilt-Chamberlain)
