@@ -46,7 +46,7 @@ Ora indichiamo con $s_0$ l'assetto sociale attuale. Diamo le seguenti definizion
 Uno stirneriano endorserà qualsiasi pretesa trasformativa, coattiva o meno che sia, altre scuole invece endorseranno solo quelle non coattive. 
 La distinzione fra possibile ed effettiva pretesa trasformativa serve per tener conto del fatto che un agente non considera solo del proprio potere quando decide se vuole cambiare sistema sociale, ma farà altre considerazioni, che possono riguardare ad esempio le possibili interazioni avverse che potrebbe subire nel nuovo assetto sociale, come anche considerazioni in merito alla perdita di potere di altri agenti. In particolare l'introduzione della relazione d'ordine sugli assetti sociali ci permette di non imporre che gli agenti siano egocentrici.
 
-**Definizione** Diremo che un agente $i$ è libero in $s\in S$ sse nell'assetto sociale $s$ attuale non ha pretese trasformative non coattive.
+**Definizione** Diremo che un agente $i$ è libero in $s\in S$ sse nell'assetto sociale $s$ non ha pretese trasformative non coattive.
 
 **Definizione** Diremo che l'assetto sociale $s\in S$ *produce una società libera* se in $s$, per ogni $i \in I$, $i$ è libero.
 
