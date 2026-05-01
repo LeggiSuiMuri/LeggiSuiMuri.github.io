@@ -113,10 +113,12 @@ Adesso dimostriamo la seguente proposizione.
 Adesso diamo  altre due importanti definizioni
 
 **Definizione** Data una SCF $C: K \rightarrow S$, diremo che un agente $i$  ha una libertà minimale rispetto a $C$ se esiste  $\{\mathbf{a}_1, \mathbf{a}_2\} \subset S$ (con i due elementi distinti) per cui valga la seguente proprietà:
+
 $$ 
 \mathbf{a}_s <^i_k \mathbf{a}_t \implies C(k)\neq \mathbf{a}_s
 $$
- per ogni $s, t \in \{1,2\}$, e $k \in K$.
+
+per ogni $s, t \in \{1,2\}$, e $k \in K$.
 
  **Definizione** Data una SCF $C: K \rightarrow S$, diremo che $C$ rispetta l'ipotesi di liberalismo minimale se esistono almeno due individui distinti hanno una libertà minimale.
 
@@ -136,9 +138,11 @@ Diamo la seguente definizione
 **Definizione** Chiameremo un insieme $\{i,j\}$, con $i,j \in \{1,...,l\}$ (con $i \neq j$) una coalizione binaria. 
 
 **Definizione** Data una SCF $C: K \rightarrow S$, diremo che una coalizione binaria $\{i,j\}$  ha una libertà minimale rispetto a $C$ se esiste  $\{\mathbf{a}_1, \mathbf{a}_2\} \subset S$ (con i due elementi distinti) per cui valga la seguente proprietà:
+
 $$ 
 ( \forall u \in \{i, j\}\text{	}\mathbf{a}_s <^u_k \mathbf{a}_t) \implies C(k)\neq \mathbf{a}_s
 $$
+
  per ogni $s, t \in \{1,2\}$, e $k \in K$.
 
  
