@@ -152,6 +152,7 @@ $$
  **Dimostrazione** Essendo l'intersezione fra le coalizioni vuota, allora basta prendere i set di preferenze in cui gli individui della stessa coalizioni hanno lo stesso ordinamento, in particolare in questi set di preferenze le coalizioni si comportano come un individuo unico, per cui si può applicare Sen classico e ottenere la tesi.  $\square$
 
  ## Dimostrazione del teorema di impossibilità
+ 
 Per risultati generali (sempre riconducibili a Debreu), noi sappiamo che date vale il seguente risultato
 
 **Teorema (Debreu senza egocentrismo)** Per ogni $k \in \Sigma^l$, e per ogni dotazione iniziale $\mathbf{o} \in S$ , esiste una allocazione Pareto-efficiente stretta (e quindi anche debole) tale rispetti la dotazione iniziale $\mathbf{o}$.
