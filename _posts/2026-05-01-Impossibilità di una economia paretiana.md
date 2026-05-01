@@ -9,7 +9,7 @@ tags: [Filosofia Politica]
 # Impossibilità di una economia di scambio paretiana senza ipotesi di egocentrismo
 
 Come è noto dalla microeconomia, sotto certe ipotesi sulle preferenze degli agenti in merito alle distribuzioni sociali di beni (razionalità, egocentrismo, continuità), è sempre possibile trovare almeno una distribuzione che sia ottima secondo Pareto e al contempo sia preferita alla distribuzione iniziale dei beni, e tale che gli agenti non hanno più interesse a scambiare. 
-Un quesito che ci si può porre è se è possibile avere un risultato simile indebolendo l'ipotesi sulle preferenze degli agenti. In questo articolo vedremo come il risultato decade se si elimina l'ipotesi di egocentrismo (e ci sono almeno 4 agenti).
+Un quesito che ci si può porre è se è possibile avere un risultato simile indebolendo l'ipotesi sulle preferenze degli agenti. In questo articolo vedremo come il risultato decade se si elimina l'ipotesi di egocentrismo (e ci sono almeno 4 agenti, di cui almeno 2 non nullatenenti).
 
 
 ## Modello di Arrow-Debreu e notazione
@@ -54,6 +54,8 @@ Un altro elemento molto importante del presente modello è quello che i beni in 
 
 **Definizione** Chiamiamo $\mathbf{o} \in S$ l'allocazione originaria. Diremo che una allocazione $\mathbf{a} \in S$ rispetta l'allocazione originaria se per ogni $i$ vale che  $\mathbf{a} \ge^i \mathbf{o}$.
 
+**Definizione** Diremo che un agente è nullatenente se il suo paniere corrispondente nell'allocazione originaria è non nullo.
+
 Infine diamo una condizione di "ottimalità" nel senso di scambi.
 
 **Definizione** Diremo che una allocazione $\mathbf{a} \in S$ è stabile per scambi se non esiste alcuna altra allocazione $\mathbf{b} \in S$ tale che $\mathbf{a}$ e $\mathbf{b}$ differiscono unicamente per i panieri di due agenti $i$ e $j$, e vale che $\mathbf{b}>^t\mathbf{a}$ per $t \in \lbrace i,j\rbrace$.
@@ -76,7 +78,7 @@ Facciamo alcuni commenti su quanto detto. Usando questo linguaggio, se chiamiamo
 Ora qualcunx potrebbe contestare l'utilizzo del termine "equilibrio economico generale" in questo contesto, in quanto questo linguaggio è solitamente associato ai teoremi dell'economia, e fa riferimento in particolare a quelle allocazioni selezionabili che sono ottenibili via ricerca degli zeri di una funzione eccesso di domanda. 
 Chiaramente non è il nostro caso, nel contesto generale in cui ci stiamo ponendo (in cui accettiamo anche agenti non egocentrici) questo tipo di desiderata di "annullamento della funzione eccesso di domanda" sarebbe complicato da porre, infatti anche riuscissimo a riformulare l'ipotesi di agenti price-taker senza l'ipotesi di egocentrismo, comunque non è evidente quale sarebbe la strategia ottimale degli agenti (e quindi sarebbe complicato definire come costruire la funzione eccesso di domanda). Di contro, il nostro obiettivo è ancora più profondo, ossia quello di dimostrare che anche se riuscissimo a costruire una funzione eccesso di domanda, e questa ammettesse zeri, comunque non avremmo garantito che quelli zeri generino allocazioni selezionabili. In definitiva, non possiamo dire che l'incontro fra domanda e offerta produca allocazioni "efficienti". Il nostro obiettivo infatti è dimostrare il seguente teorema:
 
-**Teorema (Impossibilità)** Non esiste un equilibrio economico generale debole con dominio non ristretto se $l \ge 4$
+**Teorema (Impossibilità)** Non esiste un equilibrio economico generale debole con dominio non ristretto se $l \ge 4$ e ci sono almeno due agenti non nullatenenti.
 
 Quindi perché stiamo usando questa terminologia? Perché vogliamo porre l'accento sul fatto che ci stiamo interessando non solo al fatto che le allocazioni devono essere ottimi di Pareto e rispettare l'allocazione iniziale, ma anche che siano generabili via scambi (ossia che la dinamica di scambio non rompa l'efficienza paretiana).
 
@@ -158,11 +160,11 @@ Per cui, anche senza assumere egocentrismo, noi sappiamo che esiste una allocazi
 
 Rienunciamo il teorema.
 
- **Teorema 2. (Impossibilità)** Non esiste un equilibrio economico generale debole con dominio non ristretto se $l\ge 4$.
+ **Teorema 2. (Impossibilità)** Non esiste un equilibrio economico generale debole con dominio non ristretto se $l\ge 4$, di cui 2 non nullatenenti.
  
  **Dimostrazione**
 Se per assurdo non valesse la tesi, per la Proposizione 1 varrebbe che esiste una SCF $C:\Sigma^l \rightarrow S$ che rispetta l'allocazione iniziale, rispetta il principio debole di Pareto, ed è stabile per scambi. Vogliamo dimostrare che questo è impossibile per il teorema di Sen per coalizioni binarie.
-Per ipotesi sappiamo che esistono almeno quattro agenti distinti, chiamiamoli $A,B,C,D$. Vogliamo dimostrare che $\lbrace A,B\rbrace$ e $\lbrace C,D\rbrace$ sono due coalizioni binarie che hanno una libertà minimale. Infatti si noti che l'ipotesi che la SCF sia stabile per scambi impone che, date due allocazioni realizzabili $\mathbf{a}$ e $\mathbf{b}$ tali che differiscono unicamente per i panieri di $A$ e $B$, allora se entrambi preferisco $\mathbf{b}$ a $\mathbf{a}$, allora la società non può scegliere l'allocazione $\mathbf{a}$ (discorso simile vale per $C$ e $D$). Ma questa è esattamente la definizione di libertà minimale per coalizioni binarie. Per cui l'esistenza di $C$ implica l'esistenza di una SCF su $\Sigma^l$ che rispetta il principio di Pareto e liberalismo minimale per bicoalizioni. Assurdo per Sen. $\square$
+Per ipotesi sappiamo che esistono almeno quattro agenti distinti, chiamiamoli $A,B,C,D$. WLOG assumiamo che $A$ e $C$ sono non nullatenenti. Vogliamo dimostrare che $\lbrace A,B\rbrace$ e $\lbrace C,D\rbrace$ sono due coalizioni binarie che hanno una libertà minimale. Infatti si noti che l'ipotesi che la SCF sia stabile per scambi impone che, date due allocazioni realizzabili $\mathbf{a}$ e $\mathbf{b}$ tali che differiscono unicamente per i panieri di $A$ e $B$ (queste due allocazioni esistono in quanto $A$ è non nullatenente), allora se entrambi preferisco $\mathbf{b}$ a $\mathbf{a}$, allora la società non può scegliere l'allocazione $\mathbf{a}$ (discorso simile vale per $C$ e $D$). Ma questa è esattamente la definizione di libertà minimale per coalizioni binarie. Per cui l'esistenza di $C$ implica l'esistenza di una SCF su $\Sigma^l$ che rispetta il principio di Pareto e liberalismo minimale per bicoalizioni. Assurdo per Sen. $\square$
 
 ## Ha senso non imporre l'egocentrismo?
 
