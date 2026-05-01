@@ -1,6 +1,6 @@
 ---
 layout: post 
-title: "Impossibilità di una economia di paretiana" 
+title: "Impossibilità di una economia paretiana" 
 author: "Exim Gealbhonn" 
 categories: journal 
 tags: [Filosofia Politica]
