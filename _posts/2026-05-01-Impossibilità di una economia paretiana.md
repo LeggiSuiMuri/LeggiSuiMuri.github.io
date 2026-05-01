@@ -15,7 +15,7 @@ Un quesito che ci si può porre è se è possibile avere un risultato simile ind
 ## Modello di Arrow-Debreu e notazione
 Ci concentreremo sul caso di una economia senza produzione. In particolare ricostruiremo il classico modello di Arrow-Debreu, ma non imporremo la condizione di egocentrismo
 
-Il problema è quello di distribuire un paniere di $l \in \mathbb{N}$ beni limitati fra $m \in \mathbb{N}$ agenti. La quantità di beni disponibili  alla società è data dal vettore $\Omega=(x_1^{max},... x_l^{max})$, dove
+Il problema è quello di distribuire un paniere di $m \in \mathbb{N}$ beni limitati fra $l \in \mathbb{N}$ agenti. La quantità di beni disponibili  alla società è data dal vettore $\Omega=(x_1^{max},... x_m^{max})$, dove
 
 $$ x_i^{max} \in \mathbb{R}_+$$  
 
@@ -64,6 +64,7 @@ Infine diamo una condizione di "ottimalità" nel senso di scambi.
 L'interpretazione di questa definizione è che, se si realizza una allocazione che è stabile per scambi, nessuno ha più possibilità di scambiare.
 
 Adesso imponiamo i nostri desiderata.
+
 **Definizione** Diremo che una allocazione $\mathbf{a} \in S$ è selezionabile (strettamente o debolemente) se rispetta l'allocazione originaria, è un ottimo di Pareto (risp stretto o debole), e inoltre è una allocazione che è stabile per scambi.
 [Sostanzialmente l'idea è che l'allocazione finale che si realizzerà sarà selezionata all'interno nell'insieme delle allocazioni selezionabili]
 
@@ -77,6 +78,7 @@ Facciamo alcuni commenti su quanto detto. Usando questo linguaggio, se chiamiamo
 
 Ora qualcunx potrebbe contestare l'utilizzo del termine "equilibrio economico generale" in questo contesto, in quanto questo linguaggio è solitamente associato ai teoremi dell'economia, e fa riferimento in particolare a quelle allocazioni selezionabili che sono ottenibili via ricerca degli zeri di una funzione eccesso di domanda. 
 Chiaramente non è il nostro caso, nel contesto generale in cui ci stiamo ponendo (in cui accettiamo anche agenti non egocentrici) questo tipo di desiderata di "annullamento della funzione eccesso di domanda" sarebbe complicato da porre, infatti anche riuscissimo a riformulare l'ipotesi di agenti price-taker senza l'ipotesi di egocentrismo, comunque non è evidente quale sarebbe la strategia ottimale degli agenti (e quindi sarebbe complicato definire come costruire la funzione eccesso di domanda). Di contro, il nostro obiettivo è ancora più profondo, ossia quello di dimostrare che anche se riuscissimo a costruire una funzione eccesso di domanda, e questa ammettesse zeri, comunque non avremmo garantito che quelli zeri generino allocazioni selezionabili. In definitiva, non possiamo dire che l'incontro fra domanda e offerta produca allocazioni "efficienti". Il nostro obiettivo infatti è dimostrare il seguente teorema:
+
 **Teorema (Impossibilità)** Non esiste un equilibrio economico generale debole con dominio non ristretto se $l \ge 4$
 
 Quindi perché stiamo usando questa terminologia? Perché vogliamo porre l'accento sul fatto che ci stiamo interessando non solo al fatto che le allocazioni devono essere ottimi di Pareto e rispettare l'allocazione iniziale, ma anche che siano generabili via scambi (ossia che la dinamica di scambio non rompa l'efficienza paretiana).
@@ -88,6 +90,7 @@ Come piccola nota conclusiva di questa sezione, è rimasta sospesa la questione 
 
 Il nostro obiettivo adesso è quello di interpretare il modello di Arrow-Debreu che abbiamo abbozzato nel paragrafo precedente nel contesto della teoria delle scelte sociali, e da lì usare noti risultati di impossibilità per dimostrare il Teorema 2.
 Iniziamo con la prima definizione
+
 **Definizione** Sia $K \subseteq \Sigma^l$. Chiamere funzione di scelta sociale (in inglese "social choice function", da ora in SCF) con dominio $K$ una funzione $C:K\rightarrow S$
 
 L'interpretazione di una SCF è banale, se il set di preferenze è $k \in K$, allora l'allocazione selezionata per essere quella definitiva sarà $C(k)$.
@@ -95,12 +98,16 @@ L'interpretazione di una SCF è banale, se il set di preferenze è $k \in K$, al
 Ridiamo alcune definizione già viste nel paragrafo precedente, ma nel contesto delle SCF.
 
 **Definizione** Data una allocazione iniziale $\mathbf{o}\in S$. Diciamo che una SCF $C$ con dominio $K$ rispetta l'allocazione iniziale se per ogni $k \in K$ vale che $C(k) \geq^i \mathbf{o}$ per ogni $i$.
+
 **Definizione** Data una SCF $C$ con dominio $K$, diremo che rispetta il principio debole di Pareto se per ogni $k \in K$ e per ogni $\mathbf{a}, \mathbf{b} \in S$ tale che $\mathbf{a}<^i_k \mathbf{b}$ per ogni $i$, allora $C(k)\neq \mathbf{a}$.
+
 **Definizione** Data una SCF $C$ con dominio $K$, diremo che è stabile per scambi se per ogni $k \in K$, $C(k)$ è un'allocazione che è stabile per scambi (in riferimento al set di preferenze $k$).
 Detto altrimenti, se è possibile passare da $\mathbf{a}$ a $\mathbf{b}$ attraverso uno scambio fra 2 agenti, allora $C(k) \neq \mathbf{a}$.
 
 Adesso dimostriamo la seguente proposizione.
+
 **Proposizione** Sia $K \subseteq \Sigma^l$. Se esiste un equilibrio economico generale debole su $K$, allora esiste una SCF $C:K \rightarrow S$ che rispetta l'allocazione iniziale, il principio debole di Pareto ed è stabile per scambi.
+
 **Dimostrazione** La dimostrazione è elementare. Preso un $k \in K$, basta associagli una qualche allocazione selezionabile scelta in qualche modo. In particolare chiamiamo $f:K \rightarrow P(S)$ la funzione che associa $k$ al suo corrispondente insieme di allocazioni selezionabili. Si noti che $\emptyset \notin f(K)$. Si noti in particolare che per l'assioma della scelta esiste una funzione di scelta $g: P(S) \setminus \{\emptyset\} \rightarrow S$. Per cui basta prendere $C=g \circ f$. Chiaramente per costruzione questa SCF rispetta le due proprietà. $\square$
 
 Adesso diamo  altre due importanti definizioni
@@ -117,6 +124,7 @@ $$
  Adesso dimostriamo il seguente importante teorema
 
  **Teorema (Sen per SCF)** Non esiste alcuna funzione di scelta su $\Sigma^l$ tale che rispetti il principio debole di Pareto e liberalismo minimale se ci sono almeno 2 individui.
+ 
  **Dimostrazione** Basta ricalcare la [dimostrazione del teorema di Sen](https://www.reforming.it/doc/1787/sen-impossibilityparetian.pdf), ma con qualche accortezza. Da questo momento in poi, quando dirò "preferiscono", intendo "preferiscono strettamente.". Inoltre si noti che le relazioni che costruiremo nel seguito è possibile renderle banalmente continue (se sommiamo, ""nel senso degli ordinali""", un preordine completo e continuo ad un preordine completo su un insieme finito di elementi, otteniamo ancora un preordine completo e continuo). 
  Siano gli individui $i$ e $j$ sono i due individui distinti che hanno una libertà, e la loro rispettive coppie su cui sono decisivi sono rispettivamente $\{\mathbf{a}_1, \mathbf{a}_2\}$ e $\{\mathbf{b}_1, \mathbf{b}_2\}$. 
  Nel caso in cui $\{\mathbf{a}_1, \mathbf{a}_2\}=\{\mathbf{b}_1, \mathbf{b}_2\}$, allora basta prendere un set di preferenze in cui tutti gli agenti preferiscono $\mathbf{a}_1$ e $\mathbf{a}_2$ a qualsiasi altra opzione, e tale che $i$  preferisca strettamente $\mathbf{a}_1$ ad $\mathbf{a}_2$, mentre $j$ preferisca $\mathbf{a}_2$ ad $\mathbf{a}_1$. Per principio di Pareto le uniche scelte possibili sono  $\mathbf{a}_1$ e $\mathbf{a}_2$, ma per per definizione di libertà minimale, nessuna delle due va bene. Per cui non esiste una funzione di scelta sociale.
@@ -125,7 +133,9 @@ $$
 
 Adesso preseguiamo cercando di dare una piccola versione alternativa di questo teorema. 
 Diamo la seguente definizione
+
 **Definizione** Chiameremo un insieme $\{i,j\}$, con $i,j \in \{1,...,l\}$ (con $i \neq j$) una coalizione binaria. 
+
 **Definizione** Data una SCF $C: K \rightarrow S$, diremo che una coalizione binaria $\{i,j\}$  ha una libertà minimale rispetto a $C$ se esiste  $\{\mathbf{a}_1, \mathbf{a}_2\} \subset S$ (con i due elementi distinti) per cui valga la seguente proprietà:
 $$ 
 ( \forall u \in \{i, j\}\text{	}\mathbf{a}_s <^u_k \mathbf{a}_t) \implies C(k)\neq \mathbf{a}_s
@@ -137,10 +147,12 @@ $$
  **Definizione** Data una SCF $C: K \rightarrow S$, diremo che $C$ rispetta l'ipotesi di liberalismo minimale per bicoalizioni se esistono almeno due coalizioni binarie con intersezione vuota che hanno una libertà minimale.
 
  **Teorema (Sen per coalizioni binarie)** Non esiste alcuna funzione di scelta sociale su $\Sigma^l$ tale che rispetti il principio debole di Pareto e liberalismo minimale per bicoalizioni se ci sono almeno 4 individui.
+
  **Dimostrazione** Essendo che l'intersezione fra le coalizioni è vuota, allora basta prendere i set di preferenze in cui gli individui della stessa coalizioni hanno lo stesso ordinamento, in particolare in questi set di preferenze le coalizioni si comportano come un individuo unico, per cui si può applicare Sen classico e ottenere la tesi.  $\square$
 
  ## Dimostrazione del teorema di impossibilità
 Per risultati generali (sempre riconducibili a Debreu), noi sappiamo che date vale il seguente risultato
+
 **Teorema (Debreu senza egocentrismo)** Per ogni $k \in \Sigma^l$, e per ogni dotazione iniziale $\mathbf{o} \in S$ , esiste una allocazione Pareto-efficiente stretta (e quindi anche debole) tale rispetti la dotazione iniziale $\mathbf{o}$.
 
 Per cui, anche senza assumere egocentrismo, noi sappiamo che esiste una allocazione ottimale secondo Pareto preferita da tutti a quella iniziale. Ciò che dimostreremo è che non è detto che ne possiamo trovare una che è anche stabile per scambi. 
@@ -148,6 +160,7 @@ Per cui, anche senza assumere egocentrismo, noi sappiamo che esiste una allocazi
 Rienunciamo il teorema.
 
  **Teorema 2. (Impossibilità)** Non esiste un equilibrio economico generale debole con dominio non ristretto se $l\ge 4$.
+ 
  **Dimostrazione**
 Se per assurdo non valesse la tesi, per la Proposizione 1 varrebbe che esiste una SCF $C:\Sigma^l \rightarrow S$ che rispetta l'allocazione iniziale, rispetta il principio debole di Pareto, ed è stabile per scambi. Vogliamo dimostrare che questo è impossibile per il teorema di Sen per coalizioni binarie.
 Per ipotesi sappiamo che esistono almeno quattro agenti distinti, chiamiamoli $A,B,C,D$. Vogliamo dimostrare che $\{A,B\}$ e $\{C,D\}$ sono due coalizioni binarie che hanno una libertà minimale. Infatti si noti che l'ipotesi che la SCF sia stabile per scambi impone che, date due allocazioni realizzabili$\mathbf{a}$ e $\mathbf{b}$ tali che differiscono unicamente per i panieri di $A$ e $B$, allora se entrambi preferisco $\mathbf{b}$ a $\mathbf{a}$, allora la società non può scegliere l'allocazione $\mathbf{a}$ (discorso simile vale per $C$ e $D$). Ma questa è esattamente la definizione di libertà minimale per coalizioni binarie. Per cui l'esistenza di $C$ implica l'esistenza di una SCF su $\Sigma^l$ che rispetta il principio di Pareto e liberalismo minimale per bicoalizioni. Assurdo per Sen. $\square$
