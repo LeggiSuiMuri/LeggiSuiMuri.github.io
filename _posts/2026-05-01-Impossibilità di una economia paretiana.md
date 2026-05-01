@@ -101,7 +101,7 @@ Detto altrimenti, se è possibile passare da $\mathbf{a}$ a $\mathbf{b}$ attrave
 
 Adesso dimostriamo la seguente proposizione.
 **Proposizione** Sia $K \subseteq \Sigma^l$. Se esiste un equilibrio economico generale debole su $K$, allora esiste una SCF $C:K \rightarrow S$ che rispetta l'allocazione iniziale, il principio debole di Pareto ed è stabile per scambi.
-**Dimostrazione** La dimostrazione è elementare. Preso un $k \in K$, basta associagli una qualche allocazione selezionabile scelta in qualche modo. In particolare chiamiamo $f:K \rightarrow P(S)$ la funzione che associa $k$ al suo corrispondente insieme di allocazioni selezionabili. Si noti che $\empty \notin f(K)$. Si noti in particolare che per l'assioma della scelta esiste una funzione di scelta $g: P(S) \setminus \{\empty\} \rightarrow S$. Per cui basta prendere $C=g \circ f$. Chiaramente per costruzione questa SCF rispetta le due proprietà. $\square$
+**Dimostrazione** La dimostrazione è elementare. Preso un $k \in K$, basta associagli una qualche allocazione selezionabile scelta in qualche modo. In particolare chiamiamo $f:K \rightarrow P(S)$ la funzione che associa $k$ al suo corrispondente insieme di allocazioni selezionabili. Si noti che $\emptyset \notin f(K)$. Si noti in particolare che per l'assioma della scelta esiste una funzione di scelta $g: P(S) \setminus \{\emptyset\} \rightarrow S$. Per cui basta prendere $C=g \circ f$. Chiaramente per costruzione questa SCF rispetta le due proprietà. $\square$
 
 Adesso diamo  altre due importanti definizioni
 
