@@ -1,14 +1,15 @@
 ---
 layout: post 
-title: "Impossibilità di una economia di scambio paretiana senza ipotesi di egocentrismo" 
+title: "Impossibilità di una economia di paretiana" 
 author: "Exim Gealbhonn" 
 categories: journal 
 tags: [Filosofia Politica]
 ---
 
+# Impossibilità di una economia di scambio paretiana senza ipotesi di egocentrismo
 
 Come è noto dalla microeconomia, sotto certe ipotesi sulle preferenze degli agenti in merito alle distribuzioni sociali di beni (razionalità, egocentrismo, continuità), è sempre possibile trovare almeno una distribuzione che sia ottima secondo Pareto e al contempo sia preferita alla distribuzione iniziale dei beni, e tale che gli agenti non hanno più interesse a scambiare. 
-Un quesito che ci si può porre è se è possibile avere un risultato simile indebolendo l'ipotesi sulle preferenze degli agenti. In questo articolo vedremo come il risultato decada se si elimina l'ipotesi di egocentrismo (e ci sono almeno 4 agenti).
+Un quesito che ci si può porre è se è possibile avere un risultato simile indebolendo l'ipotesi sulle preferenze degli agenti. In questo articolo vedremo come il risultato decade se si elimina l'ipotesi di egocentrismo (e ci sono almeno 4 agenti).
 
 
 ## Modello di Arrow-Debreu e notazione
