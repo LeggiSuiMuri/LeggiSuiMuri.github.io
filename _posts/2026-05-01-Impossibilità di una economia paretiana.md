@@ -72,7 +72,7 @@ Infine diremo che esiste un equilibrio economico generale (stretto o debole) su 
 
 Diremo che esiste un equilibrio economico generale con dominio non ristretto se $K=\Sigma^l$.
 
-Facciamo alcuni commenti su quanto detto. Usando questo linguaggio, se chiamiamo $K^*$ il sottoinsieme di $\Sigma^l$ in cui ogni $k \in K^*$ è composto solo da preferenze egocentriche, allora il classico risultato di Debreu può essere riscritto in questi termini:
+Facciamo alcuni commenti su quanto detto. Usando questo linguaggio, se chiamiamo $K_e$ il sottoinsieme di $\Sigma^l$ in cui ogni $k \in K^*$ è composto solo da preferenze egocentriche, allora il classico risultato di Debreu può essere riscritto in questi termini:
 
 **Teorema (Debreu)**  Per ogni $K \subseteq K^*$, esiste un equilibrio economico generale stretto su $K$.
 
