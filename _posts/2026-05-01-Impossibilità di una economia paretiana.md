@@ -149,7 +149,7 @@ $$
 
  **Teorema (Sen per coalizioni binarie)** Non esiste alcuna funzione di scelta sociale su $\Sigma^l$ tale che rispetti il principio debole di Pareto e liberalismo minimale per bicoalizioni se ci sono almeno 4 individui.
 
- **Dimostrazione** Essendo che l'intersezione fra le coalizioni è vuota, allora basta prendere i set di preferenze in cui gli individui della stessa coalizioni hanno lo stesso ordinamento, in particolare in questi set di preferenze le coalizioni si comportano come un individuo unico, per cui si può applicare Sen classico e ottenere la tesi.  $\square$
+ **Dimostrazione** Essendo l'intersezione fra le coalizioni vuota, allora basta prendere i set di preferenze in cui gli individui della stessa coalizioni hanno lo stesso ordinamento, in particolare in questi set di preferenze le coalizioni si comportano come un individuo unico, per cui si può applicare Sen classico e ottenere la tesi.  $\square$
 
  ## Dimostrazione del teorema di impossibilità
 Per risultati generali (sempre riconducibili a Debreu), noi sappiamo che date vale il seguente risultato
