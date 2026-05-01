@@ -30,7 +30,7 @@ In particolare si noti che una allocazione realizzabile è una in cui tutti i be
 Chiamiamo $S$ l'insieme delle allocazioni realizzabili.
 
 Per capire come selezionare l'allocazione ""migliore"" fra quelle presenti in $S$ possiamo chiederci quale sia la preferenza dei vari agenti in merito a queste allocazioni in $S$, e poi a partire da esse cercare di dare una serie di condizioni che desideriamo abbia la nostra allocazione ottimale. Auspicabilmente saremmo molto contenti se dopo aver posto questi desiderata, trovassimo che una sola allocazione ottimale li rispetta. 
-Per fare ciò quindi associamo ad ogni agente $i \in \{1,..., l\}$ una relazione transitiva e completa, ossia un preordine completo, su $S$. Indicheremo tale relazione con la notazione $\leq^i$, la cui interpretazione è quella che se vale $\mathbf{p}_1 \leq^i \mathbf{p}_2$, allora l'agente $i$ preferisce l'allocazione $\mathbf{p}_2$ a $\mathbf{p}_1$ (oppure è indifferente fra le due allocazioni). In particolare la condizione di transitività e completezza sono quelle che in letteratura economica sono quelle che caratterizzano la nozione di "razionalità". 
+Per fare ciò quindi associamo ad ogni agente $i \in \lbrace 1,..., l\ rbrace$ una relazione transitiva e completa, ossia un preordine completo, su $S$. Indicheremo tale relazione con la notazione $\leq^i$, la cui interpretazione è quella che se vale $\mathbf{p}_1 \leq^i \mathbf{p}_2$, allora l'agente $i$ preferisce l'allocazione $\mathbf{p}_2$ a $\mathbf{p}_1$ (oppure è indifferente fra le due allocazioni). In particolare la condizione di transitività e completezza sono quelle che in letteratura economica sono quelle che caratterizzano la nozione di "razionalità". 
 Noi oltre alla razionalità imporremo che questi preordini siano continui, ossia che, senza entrare eccessivamente nei dettagli,  possiamo rappresentare i nostri preordini come funzioni d'utilità continue (con topologia prodotto e poi topologia sottospazio su S).
 Questa ipotesi è rilevante in quanto (come ben vedremo dopo) nel caso in cui le possibili opzioni fra cui scegliere sono infinite (come in questo caso), allora non è garantito che esista un ottimo di Pareto, per cui tutta la presente discussione sarebbe un po' vuota, ma con l'ipotesi di continuità l'esistenza di almeno uno è garantita. Si noti comunque che se facciamo decadere che i beni sono infinitamente divisibili, avremo $S$  finito, e l'ipotesi di continuità in questo caso è sempre soddisfatta da qualsiasi preordine completo.
 
@@ -47,9 +47,12 @@ Chiameremo $\Sigma$ l'insieme di tutti i preordini completi e continui su $S$.
 Fatte queste premesse iniziamo a dare alcune definizioni utili per definire i nostri desiderata. 
 Partiamo con l'ottimalità di Pareto. 
 
-**Definizione** Diremo che una allocazione realizzabile $\mathbf{a} \in S$ è un ottimo (stretto) di Pareto sse non esiste alcun $\mathbf{b} \in S$ tale per cui vale ($\mathbf{b} \ge^i \mathbf{a}$ per ogni $i \in \{1,..., l\}$, ed esiste $j \in\{1, ..., l\}$ tale che $\mathbf{b} >^i \mathbf{a}$).
+**Definizione** Diremo che una allocazione realizzabile $\mathbf{a} \in S$ è un ottimo (stretto) di Pareto sse non esiste alcun $\mathbf{b} \in S$ tale per cui vale ($\mathbf{b} \ge^i \mathbf{a}$ per ogni $i \in \lbrace1,..., l
+brace$, ed esiste $j \in\lbrace1, ..., l
+brace$ tale che $\mathbf{b} >^i \mathbf{a}$).
 
-**Definizione** Diremo invece che una allocazione realizzabile $\mathbf{a} \in S$ è un ottimo (debole) di Pareto sse non esiste alcun $\mathbf{b} \in S$ tale per cui vale $\mathbf{b} >^i \mathbf{a}$ per ogni $i \in \{1,..., l\}$.
+**Definizione** Diremo invece che una allocazione realizzabile $\mathbf{a} \in S$ è un ottimo (debole) di Pareto sse non esiste alcun $\mathbf{b} \in S$ tale per cui vale $\mathbf{b} >^i \mathbf{a}$ per ogni $i \in \lbrace1,..., l
+brace$.
 
 È immediato dimostrare che un ottimo stretto di Pareto è anche un ottimo debole di Pareto.
 
@@ -59,7 +62,8 @@ Un altro elemento molto importante del presente modello è quello che i beni in 
 
 Infine diamo una condizione di "ottimalità" nel senso di scambi.
 
-**Definizione** Diremo che una allocazione $\mathbf{a} \in S$ è stabile per scambi se non esiste alcuna altra allocazione $\mathbf{b} \in S$ tale che $\mathbf{a}$ e $\mathbf{b}$ differiscono unicamente per i panieri di due agenti $i$ e $j$, e vale che $\mathbf{b}>^t\mathbf{a}$ per $t \in \{i,j\}$.
+**Definizione** Diremo che una allocazione $\mathbf{a} \in S$ è stabile per scambi se non esiste alcuna altra allocazione $\mathbf{b} \in S$ tale che $\mathbf{a}$ e $\mathbf{b}$ differiscono unicamente per i panieri di due agenti $i$ e $j$, e vale che $\mathbf{b}>^t\mathbf{a}$ per $t \in \lbracei,j
+brace$.
 
 L'interpretazione di questa definizione è che, se si realizza una allocazione che è stabile per scambi, nessuno ha più possibilità di scambiare.
 
@@ -108,17 +112,20 @@ Adesso dimostriamo la seguente proposizione.
 
 **Proposizione** Sia $K \subseteq \Sigma^l$. Se esiste un equilibrio economico generale debole su $K$, allora esiste una SCF $C:K \rightarrow S$ che rispetta l'allocazione iniziale, il principio debole di Pareto ed è stabile per scambi.
 
-**Dimostrazione** La dimostrazione è elementare. Preso un $k \in K$, basta associagli una qualche allocazione selezionabile scelta in qualche modo. In particolare chiamiamo $f:K \rightarrow P(S)$ la funzione che associa $k$ al suo corrispondente insieme di allocazioni selezionabili. Si noti che $\emptyset \notin f(K)$. Si noti in particolare che per l'assioma della scelta esiste una funzione di scelta $g: P(S) \setminus \{\emptyset\} \rightarrow S$. Per cui basta prendere $C=g \circ f$. Chiaramente per costruzione questa SCF rispetta le due proprietà. $\square$
+**Dimostrazione** La dimostrazione è elementare. Preso un $k \in K$, basta associagli una qualche allocazione selezionabile scelta in qualche modo. In particolare chiamiamo $f:K \rightarrow P(S)$ la funzione che associa $k$ al suo corrispondente insieme di allocazioni selezionabili. Si noti che $\emptyset \notin f(K)$. Si noti in particolare che per l'assioma della scelta esiste una funzione di scelta $g: P(S) \setminus \lbrace\emptyset
+brace \rightarrow S$. Per cui basta prendere $C=g \circ f$. Chiaramente per costruzione questa SCF rispetta le due proprietà. $\square$
 
 Adesso diamo  altre due importanti definizioni
 
-**Definizione** Data una SCF $C: K \rightarrow S$, diremo che un agente $i$  ha una libertà minimale rispetto a $C$ se esiste  $\{\mathbf{a}_1, \mathbf{a}_2\} \subset S$ (con i due elementi distinti) per cui valga la seguente proprietà:
+**Definizione** Data una SCF $C: K \rightarrow S$, diremo che un agente $i$  ha una libertà minimale rispetto a $C$ se esiste  $\lbrace\mathbf{a}_1, \mathbf{a}_2
+brace \subset S$ (con i due elementi distinti) per cui valga la seguente proprietà:
 
 $$ 
 \mathbf{a}_s <^i_k \mathbf{a}_t \implies C(k)\neq \mathbf{a}_s
 $$
 
-per ogni $s, t \in \{1,2\}$, e $k \in K$.
+per ogni $s, t \in \lbrace1,2
+brace$, e $k \in K$.
 
  **Definizione** Data una SCF $C: K \rightarrow S$, diremo che $C$ rispetta l'ipotesi di liberalismo minimale se esistono almeno due individui distinti hanno una libertà minimale.
 
@@ -127,23 +134,33 @@ per ogni $s, t \in \{1,2\}$, e $k \in K$.
  **Teorema (Sen per SCF)** Non esiste alcuna funzione di scelta su $\Sigma^l$ tale che rispetti il principio debole di Pareto e liberalismo minimale se ci sono almeno 2 individui.
  
  **Dimostrazione** Basta ricalcare la [dimostrazione del teorema di Sen](https://www.reforming.it/doc/1787/sen-impossibilityparetian.pdf), ma con qualche accortezza. Da questo momento in poi, quando dirò "preferiscono", intendo "preferiscono strettamente.". Inoltre si noti che le relazioni che costruiremo nel seguito è possibile renderle banalmente continue (se sommiamo, ""nel senso degli ordinali""", un preordine completo e continuo ad un preordine completo su un insieme finito di elementi, otteniamo ancora un preordine completo e continuo). 
- Siano gli individui $i$ e $j$ sono i due individui distinti che hanno una libertà, e la loro rispettive coppie su cui sono decisivi sono rispettivamente $\{\mathbf{a}_1, \mathbf{a}_2\}$ e $\{\mathbf{b}_1, \mathbf{b}_2\}$. 
- Nel caso in cui $\{\mathbf{a}_1, \mathbf{a}_2\}=\{\mathbf{b}_1, \mathbf{b}_2\}$, allora basta prendere un set di preferenze in cui tutti gli agenti preferiscono $\mathbf{a}_1$ e $\mathbf{a}_2$ a qualsiasi altra opzione, e tale che $i$  preferisca strettamente $\mathbf{a}_1$ ad $\mathbf{a}_2$, mentre $j$ preferisca $\mathbf{a}_2$ ad $\mathbf{a}_1$. Per principio di Pareto le uniche scelte possibili sono  $\mathbf{a}_1$ e $\mathbf{a}_2$, ma per per definizione di libertà minimale, nessuna delle due va bene. Per cui non esiste una funzione di scelta sociale.
+ Siano gli individui $i$ e $j$ sono i due individui distinti che hanno una libertà, e la loro rispettive coppie su cui sono decisivi sono rispettivamente $\lbrace\mathbf{a}_1, \mathbf{a}_2
+brace$ e $\lbrace\mathbf{b}_1, \mathbf{b}_2
+brace$. 
+ Nel caso in cui $\lbrace\mathbf{a}_1, \mathbf{a}_2
+brace=\lbrace\mathbf{b}_1, \mathbf{b}_2
+brace$, allora basta prendere un set di preferenze in cui tutti gli agenti preferiscono $\mathbf{a}_1$ e $\mathbf{a}_2$ a qualsiasi altra opzione, e tale che $i$  preferisca strettamente $\mathbf{a}_1$ ad $\mathbf{a}_2$, mentre $j$ preferisca $\mathbf{a}_2$ ad $\mathbf{a}_1$. Per principio di Pareto le uniche scelte possibili sono  $\mathbf{a}_1$ e $\mathbf{a}_2$, ma per per definizione di libertà minimale, nessuna delle due va bene. Per cui non esiste una funzione di scelta sociale.
  Nel caso in cui $\mathbf{a}_2 = \mathbf{b}_1$. Rinominiamo $\mathbf{a}= \mathbf{a}_1$, $\mathbf{c}= \mathbf{b}_1$ e  $\mathbf{b}= \mathbf{b}_2$. Adesso basta prendere un set di preferenze in cui tutti gli agenti preferiscono $\mathbf{a},\mathbf{b},\mathbf{c}$ a qualsiasi altra opzione, e tale che tutti preferiscano $\mathbf{a}$ a $\mathbf{b}$. Se ora l'agente $i$ preferisce $\mathbf{c}$ ad $\mathbf{a}$ e l'agente $j$ preferisce $\mathbf{b}$ a $\mathbf{c}$, si ottiene che non c'è alcuna scelta possibile per questa casistica. Infatti per Pareto le uniche opzioni possibili sono $\mathbf{a}$,$\mathbf{b}$,$\mathbf{c}$, ma per la definizione di libertà di $i$, $\mathbf{a}$ deve essere scartata, mentre per quella di $j$ ad essere scartato è $\mathbf{c}$, per cui l'unica opzione rimasta è $\mathbf{b}$, ma questa non va bene perché è dominata da $\mathbf{a}$, per cui $\mathbf{b}$ deve essere scartato per Pareto. Per cui non esiste una funzione di scelta sociale in questo caso.
  Il caso in cui sono tutti distinti è nello stesso spirito, ed è lasciato come esercizio al lettore. $\square$
 
 Adesso preseguiamo cercando di dare una piccola versione alternativa di questo teorema. 
 Diamo la seguente definizione
 
-**Definizione** Chiameremo un insieme $\{i,j\}$, con $i,j \in \{1,...,l\}$ (con $i \neq j$) una coalizione binaria. 
+**Definizione** Chiameremo un insieme $\lbracei,j
+brace$, con $i,j \in \lbrace1,...,l
+brace$ (con $i \neq j$) una coalizione binaria. 
 
-**Definizione** Data una SCF $C: K \rightarrow S$, diremo che una coalizione binaria $\{i,j\}$  ha una libertà minimale rispetto a $C$ se esiste  $\{\mathbf{a}_1, \mathbf{a}_2\} \subset S$ (con i due elementi distinti) per cui valga la seguente proprietà:
+**Definizione** Data una SCF $C: K \rightarrow S$, diremo che una coalizione binaria $\lbracei,j
+brace$  ha una libertà minimale rispetto a $C$ se esiste  $\lbrace\mathbf{a}_1, \mathbf{a}_2
+brace \subset S$ (con i due elementi distinti) per cui valga la seguente proprietà:
 
 $$ 
-( \forall u \in \{i, j\}\text{	}\mathbf{a}_s <^u_k \mathbf{a}_t) \implies C(k)\neq \mathbf{a}_s
+( \forall u \in \lbracei, j
+brace\text{	}\mathbf{a}_s <^u_k \mathbf{a}_t) \implies C(k)\neq \mathbf{a}_s
 $$
 
- per ogni $s, t \in \{1,2\}$, e $k \in K$.
+ per ogni $s, t \in \lbrace1,2
+brace$, e $k \in K$.
 
  
  **Definizione** Data una SCF $C: K \rightarrow S$, diremo che $C$ rispetta l'ipotesi di liberalismo minimale per bicoalizioni se esistono almeno due coalizioni binarie con intersezione vuota che hanno una libertà minimale.
@@ -165,7 +182,9 @@ Rienunciamo il teorema.
  
  **Dimostrazione**
 Se per assurdo non valesse la tesi, per la Proposizione 1 varrebbe che esiste una SCF $C:\Sigma^l \rightarrow S$ che rispetta l'allocazione iniziale, rispetta il principio debole di Pareto, ed è stabile per scambi. Vogliamo dimostrare che questo è impossibile per il teorema di Sen per coalizioni binarie.
-Per ipotesi sappiamo che esistono almeno quattro agenti distinti, chiamiamoli $A,B,C,D$. Vogliamo dimostrare che $\{A,B\}$ e $\{C,D\}$ sono due coalizioni binarie che hanno una libertà minimale. Infatti si noti che l'ipotesi che la SCF sia stabile per scambi impone che, date due allocazioni realizzabili$\mathbf{a}$ e $\mathbf{b}$ tali che differiscono unicamente per i panieri di $A$ e $B$, allora se entrambi preferisco $\mathbf{b}$ a $\mathbf{a}$, allora la società non può scegliere l'allocazione $\mathbf{a}$ (discorso simile vale per $C$ e $D$). Ma questa è esattamente la definizione di libertà minimale per coalizioni binarie. Per cui l'esistenza di $C$ implica l'esistenza di una SCF su $\Sigma^l$ che rispetta il principio di Pareto e liberalismo minimale per bicoalizioni. Assurdo per Sen. $\square$
+Per ipotesi sappiamo che esistono almeno quattro agenti distinti, chiamiamoli $A,B,C,D$. Vogliamo dimostrare che $\lbraceA,B
+brace$ e $\lbraceC,D
+brace$ sono due coalizioni binarie che hanno una libertà minimale. Infatti si noti che l'ipotesi che la SCF sia stabile per scambi impone che, date due allocazioni realizzabili$\mathbf{a}$ e $\mathbf{b}$ tali che differiscono unicamente per i panieri di $A$ e $B$, allora se entrambi preferisco $\mathbf{b}$ a $\mathbf{a}$, allora la società non può scegliere l'allocazione $\mathbf{a}$ (discorso simile vale per $C$ e $D$). Ma questa è esattamente la definizione di libertà minimale per coalizioni binarie. Per cui l'esistenza di $C$ implica l'esistenza di una SCF su $\Sigma^l$ che rispetta il principio di Pareto e liberalismo minimale per bicoalizioni. Assurdo per Sen. $\square$
 
 ## Ha senso non imporre l'egocentrismo?
 
