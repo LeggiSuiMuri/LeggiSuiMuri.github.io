@@ -22,9 +22,9 @@ $$ x_i^{max} \in \mathbb{R}_+$$
 rappresenta la quantità del bene $i$-esimo disponibile. 
 Il problema è capire come distribuire i beni del vettore $\Omega$ fra i vari agenti, ossia come associare ad ogni agente $i$ un paniere di beni $p^i \in \mathbb{R_+^m}$, che conterrà appunto l'informazione su quali beni possederà l'agente $i$ e in che quantità.
 Una qualsiasi $l$-upla di panieri $\mathbf{p}=(p^1,..., p^l)$ sarà detta una allocazione. Visto che le quantità di beni sono limitate, non tutte le allocazioni di beni sono ammissibili, per cui diremo che una allocazione $\mathbf{p}$ è realizzabile se è una allocazione che rispetta la seguente proprietà
-$$
-\sum_{i=1}^l p^i=\Omega.
-$$
+
+$$ \sum_{i=1}^l p^i=\Omega. $$
+
 In particolare si noti che una allocazione realizzabile è una in cui tutti i beni vengono distribuiti (ossia nessun bene resta senza proprietario). Si noti inoltre che questa definizione di allocazione realizzabile implica implicitamente che i beni sono infinitamente divisibili (ci si può chiedere della sensatezza di avere come allocazione realizzabile una in cui possiedo una quantità di pane inferiore alle costante di Plank, ma questo passa il convento).
 
 Chiamiamo $S$ l'insieme delle allocazioni realizzabili.
