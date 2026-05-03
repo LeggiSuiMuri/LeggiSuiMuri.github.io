@@ -15,7 +15,7 @@ Un quesito che ci si può porre è se è possibile avere un risultato simile ind
 ## Modello di Arrow-Debreu e notazione
 Ci concentreremo sul caso di una economia senza produzione. In particolare ricostruiremo il classico modello di Arrow-Debreu, ma non imporremo la condizione di egocentrismo.
 
-Il problema è quello di distribuire un paniere di $m \in \mathbb{N}$ beni limitati fra $l \in \mathbb{N}$ agenti. La quantità di beni disponibili  alla società è data dal vettore $\Omega=(x_1^{max},... x_m^{max})$, dove $x_i^{max} \in \mathbb{R}_+$ rappresenta la quantità del bene $i$-esimo disponibile.
+Il problema è quello di distribuire un paniere di $m \in \mathbb{N}$ beni limitati fra $l \in \mathbb{N}$ agenti. La quantità di beni disponibili  alla società è data dal vettore $\Omega=(x_1^{max},... x_m^{max})$, dove $x_i^{max} \in \mathbb{R}_+$ rappresenta la quantità del bene $i$-esimo disponibile. Supponiamo sempre che $x_i^{max} \neq 0$
 
 Il problema è capire come distribuire i beni del vettore $\Omega$ fra i vari agenti, ossia come associare ad ogni agente $i$ un paniere di beni $p^i \in \mathbb{R}_+^m$, che conterrà appunto l'informazione su quali beni possederà l'agente $i$ e in che quantità.
 Una qualsiasi $l$-upla di panieri $\mathbf{p}=(p^1,..., p^l)$ sarà detta una allocazione. Visto che le quantità di beni sono limitate, non tutte le allocazioni di beni sono ammissibili, per cui diremo che una allocazione $\mathbf{p}$ è realizzabile se è una allocazione che rispetta la seguente proprietà
@@ -177,7 +177,7 @@ Siamo riusciti a dimostrare che la dinamica di mercato, se gli agenti non sono e
 
 Il lettore attento avrà notato che non siamo stati il più stringenti possibili con le ipotesi, infatti con banali modifiche dell'argomento è possibile ottenere questa versione un po' più generale del risultato:
 
-**Teorema** Non esiste un equilibrio economico generale debole con dominio non ristretto se $l\ge 3$ e $\Omega \neq \emptyset$.
+**Teorema** Non esiste un equilibrio economico generale debole con dominio non ristretto se $l\ge 3$.
 
 La dimostrazione è lasciata come esercizio al lettore.
 
