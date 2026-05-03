@@ -44,7 +44,7 @@ Chiameremo $\Sigma$ l'insieme di tutti i preordini completi e continui su $S$.
 Fatte queste premesse iniziamo a dare alcune definizioni utili per imporre i nostri desiderata. 
 Partiamo con l'ottimalità di Pareto. 
 
-**Definizione** Diremo che una allocazione realizzabile $\mathbf{a} \in S$ è un ottimo (stretto) di Pareto sse non esiste alcun $\mathbf{b} \in S$ tale per cui vale ($\mathbf{b} \ge^i \mathbf{a}$ per ogni $i \in \lbrace 1,..., l \rbrace$, ed esiste $j \in\lbrace 1, ..., l \rbrace$ tale che $\mathbf{b} >^i \mathbf{a}$).
+**Definizione** Diremo che una allocazione realizzabile $\mathbf{a} \in S$ è un ottimo (stretto) di Pareto sse non esiste alcun $\mathbf{b} \in S$ tale per cui vale ($\mathbf{b} \ge^i \mathbf{a}$ per ogni $i \in \lbrace 1,..., l \rbrace$, ed esiste $j \in\lbrace 1, ..., l \rbrace$ tale che $\mathbf{b} >^j \mathbf{a}$).
 
 **Definizione** Diremo invece che una allocazione realizzabile $\mathbf{a} \in S$ è un ottimo (debole) di Pareto sse non esiste alcun $\mathbf{b} \in S$ tale per cui vale $\mathbf{b} >^i \mathbf{a}$ per ogni $i \in \lbrace 1,..., l\rbrace$.
 
@@ -54,7 +54,7 @@ Un altro elemento molto importante del presente modello è quello che i beni in 
 
 **Definizione** Chiamiamo $\mathbf{o} \in S$ l'allocazione originaria. Diremo che una allocazione $\mathbf{a} \in S$ rispetta l'allocazione originaria se per ogni $i$ vale che  $\mathbf{a} \ge^i \mathbf{o}$.
 
-**Definizione** Diremo che un agente è nullatenente se il suo paniere corrispondente nell'allocazione originaria è non nullo.
+**Definizione** Diremo che un agente è nullatenente se il suo paniere corrispondente nell'allocazione originaria è nullo.
 
 Infine diamo una condizione di "ottimalità" nel senso di scambi.
 
@@ -124,7 +124,7 @@ per ogni $s, t \in \lbrace 1,2\rbrace$, e $k \in K$.
 
  **Teorema (Sen per SCF)** Non esiste alcuna funzione di scelta sociale su $\Sigma^l$ tale che rispetti il principio debole di Pareto e liberalismo minimale, se ci sono almeno 2 individui.
  
- **Dimostrazione** Basta ricalcare la [dimostrazione del teorema di Sen](https://www.reforming.it/doc/1787/sen-impossibilityparetian.pdf), ma con qualche accortezza. Da questo momento in poi, quando dirò "preferiscono", intendo "preferiscono strettamente.". Inoltre si noti che le relazioni che costruiremo nel seguito è possibile renderle banalmente continue (se sommiamo, ""nel senso degli ordinali"", un preordine completo e continuo ad un preordine completo su un insieme finito di elementi, otteniamo ancora un preordine completo e continuo). 
+ **Dimostrazione** Basta ricalcare la [dimostrazione del teorema di Sen](https://www.reforming.it/doc/1787/sen-impossibilityparetian.pdf), ma con qualche accortezza. Da questo momento in poi, quando dirò "preferiscono", intendo "preferiscono strettamente". Inoltre si noti che le relazioni che costruiremo nel seguito è possibile renderle banalmente continue (se sommiamo, ""nel senso degli ordinali"", un preordine completo e continuo ad un preordine completo su un insieme finito di elementi, otteniamo ancora un preordine completo e continuo). 
  Siano gli individui $i$ e $j$ i due individui distinti che hanno una libertà, e la loro rispettive coppie su cui sono decisivi sono rispettivamente $\lbrace \mathbf{a}_1, \mathbf{a}_2\rbrace$ e $\lbrace \mathbf{b}_1, \mathbf{b}_2\rbrace$. 
  Nel caso in cui $\lbrace \mathbf{a}_1, \mathbf{a}_2\rbrace=\lbrace \mathbf{b}_1, \mathbf{b}_2\rbrace$, allora basta prendere un set di preferenze in cui tutti gli agenti preferiscono $\mathbf{a}_1$ e $\mathbf{a}_2$ a qualsiasi altra opzione, e tale che $i$  preferisca strettamente $\mathbf{a}_1$ ad $\mathbf{a}_2$, mentre $j$ preferisca $\mathbf{a}_2$ ad $\mathbf{a}_1$. Per principio di Pareto le uniche scelte possibili sono  $\mathbf{a}_1$ e $\mathbf{a}_2$, ma per per definizione di libertà minimale, nessuna delle due va bene. Per cui non esiste una funzione di scelta sociale.
  
