@@ -3,7 +3,7 @@ layout: post
 title: "Impossibilità di una economia paretiana" 
 author: "Exim Gealbhonn" 
 categories: journal 
-tags: [Filosofia Politica]
+tags: [Economia, Social Choice Theory, Filosofia Politica]
 ---
 
 # Impossibilità di una economia di scambio paretiana senza ipotesi di egocentrismo
